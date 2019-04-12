@@ -1,12 +1,13 @@
 import React, { Component } from "react";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga"; //import this into every page you want to use analytics on
 import logo from "./partridge.jpg";
 import "./App.css";
 
 function initializeReactGA() {
   ReactGA.initialize("UA-123791717-1");
   ReactGA.pageview("/homepage");
-}
+} //This function needs to go on every page you want to track
+//along with the
 
 class App extends Component {
   render() {
